@@ -1,15 +1,22 @@
-### Date created
-Include the date you created this project and README file.
+### December 9, 2019
 
-### Project Title
-Replace the Project Title
+
+### Bikeshare Python Project
+
 
 ### Description
-Describe what your project is about and what it does
-
+This project explores the Bikeshare System.. Using Python we analyze the data and get important finidings regarding the use of the Bikes in 3 cities(files used).. we do some calculations to get the most travel months and days, for instance, commonly used stations, the gender of travelers, and so on.
+ 
 ### Files used
-Include the files used
+
+chicago.csv
+new_york_city.csv
+washington.csv
+Bikeshare_python_project.py
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
+
 
