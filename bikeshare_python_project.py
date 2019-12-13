@@ -75,15 +75,12 @@ def load_data(city,month,day):
         df = df[df['month'] == month.title()]
 
     
-=======
->>>>>>> refactoring
    #filter data by day
     if day != 'all':
        df = df[df['day'] == day.title()]
     
-    
-=======
->>>>>>> refactoring
+  
+
     return df
 
 def time_stats(df):
