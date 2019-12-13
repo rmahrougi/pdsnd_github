@@ -59,7 +59,7 @@ def load_data(city,month,day):
     """
     # Reading data from the csv files
     df = pd.read_csv(CITY_DATA[city])
-    print(df.shape)
+    
      # to_datetime is used to convert date into date format
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
