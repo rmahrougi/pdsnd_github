@@ -73,12 +73,10 @@ def load_data(city,month,day):
     if month != 'all':  
         #filter by month
         df = df[df['month'] == month.title()]
-    print(df.shape)
    #filter data by day
     if day != 'all':
        df = df[df['day'] == day.title()]
     
-    print(df.shape)
     return df
 
 def time_stats(df):
