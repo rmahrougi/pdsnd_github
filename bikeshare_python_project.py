@@ -63,7 +63,7 @@ def load_data(city,month,day):
     """
     # Reading data from the csv files
     df = pd.read_csv(CITY_DATA[city])
-    print(df.shape)
+    
      # to_datetime is used to convert date into date format
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
@@ -77,12 +77,12 @@ def load_data(city,month,day):
     if month != 'all':  
         #filter by month
         df = df[df['month'] == month.title()]
-    print(df.shape)
+    
    #filter data by day
     if day != 'all':
        df = df[df['day'] == day.title()]
     
-    print(df.shape)
+    
     return df
 
 def time_stats(df):
