@@ -140,8 +140,6 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
-    start_time = time.time()
 
     # Displays counts of user types
     totalsubscribers = df['User Type'].str.count('Subscriber').sum()
