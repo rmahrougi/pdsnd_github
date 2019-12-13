@@ -73,12 +73,17 @@ def load_data(city,month,day):
     if month != 'all':  
         #filter by month
         df = df[df['month'] == month.title()]
+
     
+=======
+>>>>>>> refactoring
    #filter data by day
     if day != 'all':
        df = df[df['day'] == day.title()]
     
     
+=======
+>>>>>>> refactoring
     return df
 
 def time_stats(df):
@@ -123,7 +128,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating Trip Duration statistics...\n')
     start_time = time.time()
 
     # displays total travel time
@@ -140,8 +145,6 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
-    start_time = time.time()
 
     # Displays counts of user types
     totalsubscribers = df['User Type'].str.count('Subscriber').sum()
